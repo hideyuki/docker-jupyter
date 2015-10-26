@@ -113,10 +113,10 @@ ADD fonts/ipaexg.ttf /usr/local/share/fonts/
 
 # Notebooks
 RUN mkdir /notebooks
-ADD ./notebooks /notebooks
-VOLUME /notebooks
-
 WORKDIR /notebooks
+
+VOLUME /notebooks
+#ADD ./notebooks /notebooks
 
 EXPOSE 8888
 

@@ -4,6 +4,12 @@ Docker image of jupyter with scipy, numpy, pandas, matplotlib and IPAexGothic Ja
 
 ---
 
+# Docker pull
+
+```
+$ docker pull hideyuki/docker-jupyter
+```
+
 # Build
 
 ```
