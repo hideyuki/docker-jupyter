@@ -1,6 +1,6 @@
 jupyter:
-  image: hideyuki/jupyter
-  #build: .
+  #image: hideyuki/jupyter
+  build: .
   ports:
     - 8888:8888
   volumes:

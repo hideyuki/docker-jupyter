@@ -74,8 +74,8 @@ RUN apt-get update -qq && \
         libjpeg8-dev libfreetype6-dev libpng12-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-RUN pip2 --no-cache-dir install mysqlclient PyMySQL ipython-sql pandas matplotlib elasticsearch six qtconsole spyder
-RUN pip3 --no-cache-dir install mysqlclient PyMySQL ipython-sql pandas matplotlib elasticsearch six qtconsole spyder
+RUN pip2 --no-cache-dir install mysqlclient PyMySQL git+https://github.com/mccahill/ipython-sql pandas matplotlib elasticsearch six qtconsole spyder
+RUN pip3 --no-cache-dir install mysqlclient PyMySQL git+https://github.com/mccahill/ipython-sql pandas matplotlib elasticsearch six qtconsole spyder
 
 # Install libs for scipy numpy
 RUN apt-get update -qq && \
